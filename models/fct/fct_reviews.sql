@@ -15,5 +15,10 @@ SELECT
 FROM src_reviews
 WHERE review_text IS NOT NULL
 {% if is_incremental() %} 
-    AND review_date > (SELECT MAX(review_date) FROM {{ this }}) 
+    {% if var("start_date", False) and var("end_date", False) %}
+        AND review_date BETWEEN '{{ var("start_date") }}' AND '{{ var("end_date") }}'
+    {% else %}
+        AND review_date > (SELECT MAX(review_date) FROM {{ this }})
+        {{ log('Loading ' ~ this ~ ' incrementally (all missing dates)', info=True) }}
+    {% endif %}
 {% endif %}

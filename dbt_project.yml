@@ -38,3 +38,7 @@ models:
       +materialized: table
     src:
       +materialized: ephemeral
+
+# Configuring variables
+vars:
+  user_name: default_user_name_test
