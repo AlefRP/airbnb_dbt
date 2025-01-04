@@ -2,7 +2,19 @@
 
 ![Data Flow: CSV → Snowflake → dbt](assets/dbt_airbnb.svg)
 
-Welcome to this **dbt** project, which demonstrates how to model **Airbnb** data in a **Data Warehouse** environment using **Snowflake**. This setup is inspired by best practices from the [**jaffle_shop**](https://github.com/dbt-labs/jaffle_shop) example project, which provides a simple pattern for staging, transforming, and analyzing your data.
+Welcome to this **dbt** project, which demonstrates how to model **Airbnb** data in a **Data Warehouse** environment using **Snowflake**. 
+
+This setup is inspired by:
+
+- The [**jaffle_shop**](https://github.com/dbt-labs/jaffle_shop) example project, which outlines a simple pattern for staging, transforming, and analyzing data.
+- The Udemy course [**Complete dbt (Data Build Tool) Bootcamp: Zero to Hero**](https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-learn-dbt/), created by the **dbt Learn Team**.
+
+The project follows best practices for:
+
+1. **Data Loading**: Ingesting CSV data into Snowflake.
+2. **Staging**: Creating **staging** models to clean and prepare raw data.
+3. **Transforming**: Building **intermediate** and **mart** layers to enrich and aggregate data.
+4. **Analyzing**: Leveraging **dbt** to easily manage models, run tests, and generate documentation.
 
 ---
 
