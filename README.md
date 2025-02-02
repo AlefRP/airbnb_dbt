@@ -103,7 +103,7 @@ Below is a quick guide to the primary SQL models:
 1. **Clone** this repository and navigate into the project directory:
 
    ```bash
-   git clone https://github.com/your-account/airbnb-dbt-snowflake.git
+   [git clone https://github.com/your-account/airbnb-dbt-snowflake.git](https://github.com/AlefRP/airbnb_dbt.git)
    cd airbnb-dbt-snowflake
    ```
 
